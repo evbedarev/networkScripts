@@ -11,6 +11,7 @@ class FindMacOnCisco():
     password = readAccData.read_password();
     readAccData.close();
 
+    print(user + " " + password)
     acc = Account(user, password)
     conn = ssh2.SSH2()
     list_ip = []
